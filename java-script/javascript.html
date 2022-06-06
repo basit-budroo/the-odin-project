@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+</head>
+<body>
+<h1>HELLO Heading</h1>
+<div id="div-1"></div>
+<script>
+    const counter = (function () {
+        let privateCounter = 0;
+
+        function changeBy(val) {
+            privateCounter += val;
+        }
+
+        return {
+            increment: function () {
+                changeBy(1);
+            },
+
+            decrement: function () {
+                changeBy(-1);
+            },
+
+            value: function () {
+                return privateCounter;
+            }
+        };
+    })();
+    counter.increment();
+    counter.increment();
+
+    document.getElementById("div-1").innerHTML = counter.value();
+
+</script>
+</body>
+</html>

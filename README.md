@@ -1,2 +1,2 @@
 # the-odin-project
-Code Repository for Assignments and Projects complete from The Odin Project Learining Path.
+Code Repository for Assignments and Projects completed from The Odin Project Learning Path.
